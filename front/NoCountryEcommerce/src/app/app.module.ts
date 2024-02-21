@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
+import { LoginComponent } from './login/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
     AppComponent,
     PaginaPrincipalComponent,
     EncabezadoComponent,
-    PiePaginaComponent
+    PiePaginaComponent,
+    LoginComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

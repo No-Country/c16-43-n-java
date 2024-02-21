@@ -33,9 +33,22 @@
             color: white;
         }
     }
-    .login {
-        width: 31.41px;
-        margin-top: 107px;
-        margin-left: 490px;
+    .loginCarrito {
+        display: flex;
+        .login {
+            margin-top: 107px;
+            margin-left: 490px;
+            img {
+                margin: 0px;
+                width: 31.41px;
+            }
+        }
+        .carrito {
+            margin: 0;
+            width: 33px;
+            height: 31px;
+            margin-left: 22px;
+            margin-top: 107px;
+        }
     }
 }

@@ -1,0 +1,106 @@
+.login {
+    display: flex;
+    height: 100vh;
+    .divImg {
+        height: 100%;
+        img {
+            width: auto;
+            max-height: 100%;
+        }
+    }
+    .formulario {
+        width: 100vmax;
+        background-color: rgba(1, 127, 141, 1);
+        display: flex;
+        justify-content: center;
+        .contenido {
+            p {
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                font-family: Raleway;
+                margin-top: 182px;
+            }
+            .dCorreo {
+                margin-top: 80px;
+                img {
+                    position: absolute;
+                    margin-top: 13px;
+                    margin-left: 25px;
+                }
+                .imgContraseña {
+                    margin-top: 10px;
+                    margin-left: 30px;
+                }
+                .correo {
+                    
+                    border: 0;
+                    padding: 0px 0px 0px 80px;
+                    border-radius: 37px;
+                    width: 425px;
+                    height: 54px;
+                    background-color: rgba(92, 207, 190, 1);
+                    color: white;
+                    font-family: Raleway;
+                    &::placeholder {
+                        color: white;
+                        font-size: 16px;
+                        font-family: Raleway;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .dContraseña {
+                margin-top: 50px;
+                .imgContraseña {
+                    position: absolute;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                }
+                .correo {
+                    border: 0;
+                    padding: 0px 0px 0px 80px;
+                    border-radius: 37px;
+                    width: 425px;
+                    height: 54px;
+                    background-color: rgba(92, 207, 190, 1);
+                    color: white;
+                    font-family: Raleway;
+                    &::placeholder {
+                        color: white;
+                        font-size: 16px;
+                        font-family: Raleway;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .dButton {
+                display: flex;
+                justify-content: center;
+                button {
+                    width: 240px;
+                    height: 54px;
+                    margin-top: 50px;
+                    border: 0;
+                    background-color: rgba(238, 239, 239, 1);
+                    font-family: Raleway;
+                    font-size: 25px;
+                    border-radius: 37px;
+                }
+            }
+            .pOlvido {
+                margin-top:15px;
+                font-size: 16px;
+            }
+            .pRegistrarse {
+                margin-top:50px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}

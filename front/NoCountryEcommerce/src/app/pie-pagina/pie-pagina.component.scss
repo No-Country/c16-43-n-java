@@ -1,0 +1,51 @@
+.piePagina {
+    height: 212px;
+    background-color: rgba(1, 127, 141, 1);
+    display: flex;
+    justify-content: center;
+    div {
+        margin-top: 25px;
+        width: 240px;
+        p {
+            font-size: 20px;
+            font-family: Raleway;
+            font-weight: 400;
+            color: white;
+        }
+        .items {
+            font-size: 14px;
+        }
+    }
+    .contacto1 {
+        margin-top: 25px;
+    }
+    .contacto {
+        display: flex;
+        margin-top: 0px;
+        height: 16px;
+        align-items: center;
+        img {
+            margin: 0;
+            margin-left: 2.5px;
+            height: 20px;
+        }
+        p {
+            margin: 0px;
+            margin-left: 5px;
+        }
+    }
+    .correo {
+        display: flex;
+        margin-top: 14px;
+        height: 16px;
+        align-items: center;
+        img {
+            margin: 0;
+            width: 19px;
+        }
+        p {
+            margin: 0;
+            margin-left: 5px;
+        }
+    }
+}

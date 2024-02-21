@@ -1,0 +1,41 @@
+.logo {
+    display: flex;
+    height: 196px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #0F6BB5B2;
+    background: linear-gradient(#0F6BB5B2 60%, transparent); 
+    .background-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0F6BB5B2;
+        filter: blur(50px); /* Valor del desenfoque en píxeles */
+    }
+    img {
+        width: 116px;
+        margin-left: 104px;
+    }
+    .enlaces {
+        display: flex;
+        width: 590px;
+        justify-content: space-around;
+        margin-left: 401px;
+        p {
+            font-size: 23px;
+            margin-top: 119px;
+            line-height: 23.48px;
+            font-weight: 400;
+            font-family: Raleway;
+            color: white;
+        }
+    }
+    .login {
+        width: 31.41px;
+        margin-top: 107px;
+        margin-left: 490px;
+    }
+}

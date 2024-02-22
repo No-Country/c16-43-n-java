@@ -26,16 +26,9 @@ El proyecto Ecommerce Printopia es una plataforma de comercio electrónico dise�
 
 ## Colaboradores:
 
-- German Osimani
-  - [LinkedIn](https://www.linkedin.com/in/germanosimani)
-  - Desarrollador Full Stack
-  - Product Owner
-- María López
-  - [LinkedIn](https://www.linkedin.com/in/maria-lopez)
-  - Diseñadora UX/UI
-- Carlos Martínez
-  - [LinkedIn](https://www.linkedin.com/in/carlos-martinez)
-  - Ingeniero de Software
+
+| [<img src="https://avatars.githubusercontent.com/u/116905349?v=4" width=115><br><sub>German Osimani</sub>](https://github.com/Cuch0) | [  <img src="https://avatars.githubusercontent.com/u/64920527?v=4" width=115><br><sub>Raul Burgos Murray</sub>](https://github.com/specializeddevel) | [<img src="https://avatars.githubusercontent.com/u/46717303?v=4" width=115><br><sub>Dario Acevedo</sub>](https://github.com/AcevedoDario) | [<img src="https://avatars.githubusercontent.com/u/110424355?v=4" width=115><br><sub>Florencia Daniela Juarez</sub>](https://github.com/FlorcitaJ) | [<img src="https://avatars.githubusercontent.com/u/65969373?v=4" width=115><br><sub>Cristian Sánchez</sub>](https://github.com/Elcrisanz) | [<img src="https://avatars.githubusercontent.com/u/83742990?v=4" width=115><br><sub>Samuel Gomez</sub>](https://github.com/samuel-gl) | [<img src="https://mir-s3-cdn-cf.behance.net/user/115/199d7f598028569.63d5e0ac4c54f.jpg" width=115><br><sub>Clarexis Colmenares</sub>](https://www.behance.net/clarecolmenares) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
 <br><br><br>
 

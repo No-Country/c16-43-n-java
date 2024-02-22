@@ -3,7 +3,7 @@
 ## Industria o Rubro: Ecommerce
 
 ## Descripción:
-El proyecto Ecommerce XYZ es una plataforma de comercio electrónico diseñada para permitir a los usuarios comprar y vender productos de manera eficiente. Con una interfaz intuitiva y funciones avanzadas, nuestro objetivo es proporcionar una experiencia de compra en línea superior para nuestros clientes.
+El proyecto Ecommerce Printopia es una plataforma de comercio electrónico diseñada para permitir a los usuarios comprar productos fabricados mediante impresion 3D. Con una interfaz intuitiva y funciones avanzadas, nuestro objetivo es proporcionar una experiencia de compra en línea superior para nuestros clientes.
 
 ## Colaboradores:
 - German Osimani

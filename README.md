@@ -1,4 +1,4 @@
-# Título: Proyecto Ecommerce XYZ
+# Título: Printopia
 
 ## Industria o Rubro: Ecommerce
 
@@ -6,9 +6,10 @@
 El proyecto Ecommerce XYZ es una plataforma de comercio electrónico diseñada para permitir a los usuarios comprar y vender productos de manera eficiente. Con una interfaz intuitiva y funciones avanzadas, nuestro objetivo es proporcionar una experiencia de compra en línea superior para nuestros clientes.
 
 ## Colaboradores:
-- Juan Pérez
-  - [LinkedIn](https://www.linkedin.com/in/juan-perez)
+- German Osimani
+  - [LinkedIn](https://www.linkedin.com/in/germanosimani)
   - Desarrollador Full Stack
+  - Product Owner
 - María López
   - [LinkedIn](https://www.linkedin.com/in/maria-lopez)
   - Diseñadora UX/UI
@@ -19,11 +20,11 @@ El proyecto Ecommerce XYZ es una plataforma de comercio electrónico diseñada p
 ## Tecnologías:
 - HTML5
 - CSS3
-- JavaScript
-- React.js
-- Node.js
+- Java
+- Angular
+- Spring
 - MongoDB
 
 ## Enlaces del Proyecto:
-- Repositorio en GitHub: [Ecommerce-XYZ](https://github.com/tuusuario/Ecommerce-XYZ)
+- Repositorio en GitHub: [Ecommerce-Printopia](https://github.com/No-Country/c16-43-n-java)
 - Sitio web: [www.ecommerce-xyz.com](https://www.ecommerce-xyz.com)

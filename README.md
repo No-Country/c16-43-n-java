@@ -23,7 +23,7 @@ El proyecto Ecommerce Printopia es una plataforma de comercio electr√≥nico dise√
 - Java
 - Angular
 - Spring
-- MongoDB
+- MySQL
 
 ## Enlaces del Proyecto:
 - Repositorio en GitHub: [Ecommerce-Printopia](https://github.com/No-Country/c16-43-n-java)

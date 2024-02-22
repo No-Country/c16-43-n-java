@@ -27,4 +27,4 @@ El proyecto Ecommerce XYZ es una plataforma de comercio electrónico diseñada p
 
 ## Enlaces del Proyecto:
 - Repositorio en GitHub: [Ecommerce-Printopia](https://github.com/No-Country/c16-43-n-java)
-- Sitio web: [www.ecommerce-xyz.com](https://www.ecommerce-xyz.com)
+- Sitio web: [www.ecommerce-Printopia.com](https://no-country-flame.vercel.app/)

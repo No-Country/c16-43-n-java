@@ -10,7 +10,6 @@ export class EncabezadoComponent {
   constructor(private inicioComponent: InicioComponent) { }
   
   mostrarLogin(): void {
-    // Llama al método mostrarLogin() del componente InicioComponent pasando los valores necesarios
     this.inicioComponent.mostrarLogin(false, false, false, true, false);
   }
 

@@ -36,11 +36,13 @@
     .loginCarrito {
         display: flex;
         .login {
+            height: 30px;
             margin-top: 107px;
             margin-left: 490px;
+            cursor: pointer;
             img {
                 margin: 0px;
-                width: 31.41px;
+                width: 31px;
             }
         }
         .carrito {

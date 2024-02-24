@@ -1,0 +1,103 @@
+.contenido {
+    display: flex;
+    height: 100vh;
+    .formulario {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        text-align: center;
+        font-family: Raleway;
+        background: #2E76BB;
+        box-shadow: inset 0px 4px 44px 0px rgba(0, 0, 0, 0.25);
+        .contenido2 {
+            width: 505px;
+            .titulo {
+                font-size: 25px;
+                margin: 146px 0px 50px 0px;
+                color: white;
+            }
+            .dNomApe {
+                display: flex;
+                input {
+                    width: 224px;
+                    height: 54px;
+                    border: 0px;
+                    border-radius: 37px;
+                    padding: 0px 0px 0px 20px;
+                    background-color: rgba(238, 239, 239, 1);
+                    &::placeholder {
+                        color: rgba(7, 29, 48, 1);
+                        font-size: 16px;
+                        font-family: Raleway;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .iNombre {
+                    margin-right: 10px;
+                }
+                .iApellido {
+                    margin-left: 10px;
+                }
+            }
+            .dCorreoContraseña {
+                display: flex;
+                flex-direction: column;
+                width: 505px;
+                input {
+                    border: 0;
+                    padding: 0;
+                    height: 54px;
+                    border-radius: 37px;
+                    padding: 0px 0px 0px 20px;
+                    background-color: rgba(238, 239, 239, 1);
+                    margin-top: 50px;
+                    &::placeholder {
+                        color: rgba(7, 29, 48, 1);
+                        font-size: 16px;
+                        font-family: Raleway;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .check {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 30px;
+                input {
+                    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+                }
+                .label {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    color: rgba(254, 254, 254, 1);
+                }
+            }
+            button {
+                width: 240px;
+                height: 54px;
+                border-radius: 37px;
+                margin-top: 80px;
+                border: 0;
+                padding: 0;
+                font-size: 25px;
+                color: rgba(7, 29, 48, 1);
+            }
+        }
+    }
+    img {
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+

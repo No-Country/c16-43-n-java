@@ -8,6 +8,7 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { InicioComponent } from './inicio/inicio.component';
     EncabezadoComponent,
     PiePaginaComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

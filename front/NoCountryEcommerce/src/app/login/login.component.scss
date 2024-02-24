@@ -1,8 +1,17 @@
 .login {
     display: flex;
     height: 100vh;
+    position: relative;
     .divImg {
-        height: 100%;
+        position: relative;
+        height: 100vh;
+        .color {
+            position: absolute; 
+            width: 100%; 
+            height: 100%;
+            background-color: rgba(1, 127, 141, 0.2);
+            box-shadow: inset 20px 4px 47px 0px rgba(0, 0, 0, 0.25);
+        }
         img {
             width: auto;
             max-height: 100%;
@@ -14,12 +23,16 @@
         display: flex;
         justify-content: center;
         .contenido {
+            .volverInicio {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
             p {
                 color: white;
                 text-align: center;
                 font-size: 25px;
                 font-family: Raleway;
-                margin-top: 182px;
+                margin-top: 120px;
             }
             .dCorreo {
                 margin-top: 80px;
@@ -33,7 +46,6 @@
                     margin-left: 30px;
                 }
                 .correo {
-                    
                     border: 0;
                     padding: 0px 0px 0px 80px;
                     border-radius: 37px;
@@ -97,7 +109,7 @@
                 font-size: 16px;
             }
             .pRegistrarse {
-                margin-top:50px;
+                margin-top:120px;
                 font-size: 20px;
                 font-weight: 700;
             }

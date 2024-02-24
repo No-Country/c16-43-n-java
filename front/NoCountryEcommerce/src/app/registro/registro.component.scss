@@ -8,26 +8,26 @@
         text-align: center;
         font-family: Raleway;
         background: #2E76BB;
-        box-shadow: inset 0px 4px 44px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0rem 0.25rem 2.75rem 0rem rgba(0, 0, 0, 0.25);
         .contenido2 {
-            width: 505px;
+            width: 31.56rem;
             .titulo {
-                font-size: 25px;
-                margin: 146px 0px 50px 0px;
+                font-size: 1.56rem;
+                margin: 9.12rem 0rem 3.12rem 0rem;
                 color: white;
             }
             .dNomApe {
                 display: flex;
                 input {
-                    width: 224px;
-                    height: 54px;
-                    border: 0px;
-                    border-radius: 37px;
-                    padding: 0px 0px 0px 20px;
+                    width: 14rem;
+                    height: 3.37rem;
+                    border: 0rem;
+                    border-radius: 2.31rem;
+                    padding: 0rem 0rem 0rem 1.25rem;
                     background-color: rgba(238, 239, 239, 1);
                     &::placeholder {
                         color: rgba(7, 29, 48, 1);
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-family: Raleway;
                     }
                     &:focus {
@@ -35,27 +35,27 @@
                     }
                 }
                 .iNombre {
-                    margin-right: 10px;
+                    margin-right: 0.62rem;
                 }
                 .iApellido {
-                    margin-left: 10px;
+                    margin-left: 0.62rem;
                 }
             }
             .dCorreoContraseña {
                 display: flex;
                 flex-direction: column;
-                width: 505px;
+                width: 31.56rem;
                 input {
-                    border: 0;
-                    padding: 0;
-                    height: 54px;
-                    border-radius: 37px;
-                    padding: 0px 0px 0px 20px;
+                    border: 0rem;
+                    padding: 0rem;
+                    height: 3.37rem;
+                    border-radius: 2.31rem;
+                    padding: 0rem 0rem 0rem 1.25rem;
                     background-color: rgba(238, 239, 239, 1);
-                    margin-top: 50px;
+                    margin-top: 3.12rem;
                     &::placeholder {
                         color: rgba(7, 29, 48, 1);
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-family: Raleway;
                     }
                     &:focus {
@@ -67,25 +67,25 @@
                 display: flex;
                 align-items: center;
                 position: absolute;
-                margin-top: 10px;
-                margin-left: 30px;
+                margin-top: 0.62rem;
+                margin-left: 1.87rem;
                 input {
-                    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+                    box-shadow: 0.06rem 0.06rem 0.12rem 0rem rgba(0, 0, 0, 0.25);
                 }
                 .label {
-                    margin-left: 5px;
-                    font-size: 14px;
+                    margin-left: 0.31rem;
+                    font-size: 0.87rem;
                     color: rgba(254, 254, 254, 1);
                 }
             }
             button {
-                width: 240px;
-                height: 54px;
-                border-radius: 37px;
-                margin-top: 80px;
-                border: 0;
-                padding: 0;
-                font-size: 25px;
+                width: 15rem;
+                height: 3.37rem;
+                border-radius: 2.31rem;
+                margin-top: 5rem;
+                border: 0rem;
+                padding: 0rem;
+                font-size: 1.56rem;
                 color: rgba(7, 29, 48, 1);
             }
         }

@@ -14,30 +14,30 @@
         height: 100%;
     }
     .imagen {
-        width: 374px;
+        width: 23.37rem;
         position: absolute;
         z-index: 1;
-        top: 346px;
-        left: 104px;
+        top: 21.62rem;
+        left: 6.5rem;
     }
     .soluciones {
-        width: 375px;
+        width: 23.43rem;
         position: absolute;
         z-index: 1;
-        top: 418px;
-        left: 104px;
+        top: 26.12rem;
+        left: 6.5rem;
     }
     .btnVerMas {
-        width: 315px;
-        height: 54px;
+        width: 19.68rem;
+        height: 3.37rem;
         position: absolute;
         z-index: 1;
-        top: 482px;
-        left: 133px;
+        top: 30.12rem;
+        left: 8.31rem;
         border: none;
-        border-radius: 37px;
+        border-radius: 2.31rem;
         background-color: hsl(171, 55%, 59%);
-        font-size: 34px;
+        font-size: 2.12rem;
         color: white;
         font-family: Raleway;
         font-weight: 300;
@@ -52,58 +52,58 @@
 .pCategorias {
     color: #071D30;
     font-family: Raleway;
-    font-size: 32px;
-    margin-top: 91px;
+    font-size: 2rem;
+    margin-top: 5.68rem;
     font-weight: 700;
 }
 
 .divCategorias {
     display: flex;
-    height: 432px;
+    height: 27rem;
     background-color: white;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 1.87rem;
+    margin-bottom: 6.25rem;
     p {
         display: flex;
         justify-content: center;
-        font-size: 25px;
+        font-size: 1.56rem;
         font-family: Raleway;
         font-weight: 400;
         color: rgba(7, 29, 48, 1);
-        margin-top: 60px;
+        margin-top: 3.75rem;
     }
     .hogar {
-        width: 240px;
-        height: 432px;
-        border-radius: 33px;
+        width: 15rem;
+        height: 27rem;
+        border-radius: 2.06rem;
         background-color: hsla(180, 3%, 94%, 0.8);
-        margin: 0px 100px;
+        margin: 0rem 6.25rem;
         img {
-            margin: 50px 49.5px;
+            margin: 3.12rem 3.09rem;
         }
     }
     .protesisDentales {
-        width: 240px;
-        height: 432px;
-        border-radius: 33px;
+        width: 16rem;
+        height: 27rem;
+        border-radius: 2.06rem;
         background-color: hsla(180, 3%, 94%, 0.8);
-        margin: 0px 100px;
+        margin: 0rem 6.25rem;
         img {
-            margin: 50px 40px;
+            margin: 3.12rem 2.5rem;
         }
         .pProtesisDentales {
-            margin-top: 73px;
+            margin-top: 4.56rem;
         }
     }
     .cosplayImg {
-        width: 240px;
-        height: 432px;
-        border-radius: 33px;
+        width: 15rem;
+        height: 27rem;
+        border-radius: 2.06rem;
         background-color: hsla(180, 3%, 94%, 0.8);
-        margin: 0px 100px;
+        margin: 0rem 6.25rem;
         img {
-            margin: 50px 31px;
+            margin: 3.12rem 1.93rem;
         }
     }
     
@@ -113,7 +113,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 150px;
+    margin-top: 9.37rem;
     .fondo {
         position: absolute; 
         width: 100%; 

@@ -1,6 +1,6 @@
 .logo {
     display: flex;
-    height: 196px;
+    height: 12.25rem;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -13,21 +13,21 @@
         width: 100%;
         height: 100%;
         background-color: #0F6BB5B2;
-        filter: blur(50px);
+        filter: blur(3.125rem);
     }
     img {
-        width: 116px;
-        margin-left: 104px;
+        width: 7.25rem;
+        margin-left: 6.5rem;
     }
     .enlaces {
         display: flex;
-        width: 590px;
+        width: 36.87rem;
         justify-content: space-around;
-        margin-left: 401px;
+        margin-left: 25.06rem;
         p {
-            font-size: 23px;
-            margin-top: 119px;
-            line-height: 23.48px;
+            font-size: 1.43rem;
+            margin-top: 7.43rem;
+            line-height: 1.46rem;
             font-weight: 400;
             font-family: Raleway;
             color: white;
@@ -36,21 +36,21 @@
     .loginCarrito {
         display: flex;
         .login {
-            height: 30px;
-            margin-top: 107px;
-            margin-left: 490px;
+            height: 1.87rem;
+            margin-top: 6.68rem;
+            margin-left: 30.62rem;
             cursor: pointer;
             img {
-                margin: 0px;
-                width: 31px;
+                margin: 0rem;
+                width: 1.93rem;
             }
         }
         .carrito {
-            margin: 0;
-            width: 33px;
-            height: 31px;
-            margin-left: 22px;
-            margin-top: 107px;
+            margin: 0rem;
+            width: 2.06rem;
+            height: 1.93rem;
+            margin-left: 1.37rem;
+            margin-top: 6.68rem;
         }
     }
 }

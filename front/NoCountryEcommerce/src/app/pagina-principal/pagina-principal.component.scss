@@ -1,0 +1,128 @@
+.imagenPrincipal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .color {
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #2E76BB70;
+    }
+    .impresora {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .imagen {
+        width: 23.37rem;
+        position: absolute;
+        z-index: 1;
+        top: 21.62rem;
+        left: 6.5rem;
+    }
+    .soluciones {
+        width: 23.43rem;
+        position: absolute;
+        z-index: 1;
+        top: 26.12rem;
+        left: 6.5rem;
+    }
+    .btnVerMas {
+        width: 19.68rem;
+        height: 3.37rem;
+        position: absolute;
+        z-index: 1;
+        top: 30.12rem;
+        left: 8.31rem;
+        border: none;
+        border-radius: 2.31rem;
+        background-color: hsl(171, 55%, 59%);
+        font-size: 2.12rem;
+        color: white;
+        font-family: Raleway;
+        font-weight: 300;
+    }
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+}
+
+.pCategorias {
+    color: #071D30;
+    font-family: Raleway;
+    font-size: 2rem;
+    margin-top: 5.68rem;
+    font-weight: 700;
+}
+
+.divCategorias {
+    display: flex;
+    height: 27rem;
+    background-color: white;
+    justify-content: center;
+    margin-top: 1.87rem;
+    margin-bottom: 6.25rem;
+    p {
+        display: flex;
+        justify-content: center;
+        font-size: 1.56rem;
+        font-family: Raleway;
+        font-weight: 400;
+        color: rgba(7, 29, 48, 1);
+        margin-top: 3.75rem;
+    }
+    .hogar {
+        width: 15rem;
+        height: 27rem;
+        border-radius: 2.06rem;
+        background-color: hsla(180, 3%, 94%, 0.8);
+        margin: 0rem 6.25rem;
+        img {
+            margin: 3.12rem 3.09rem;
+        }
+    }
+    .protesisDentales {
+        width: 16rem;
+        height: 27rem;
+        border-radius: 2.06rem;
+        background-color: hsla(180, 3%, 94%, 0.8);
+        margin: 0rem 6.25rem;
+        img {
+            margin: 3.12rem 2.5rem;
+        }
+        .pProtesisDentales {
+            margin-top: 4.56rem;
+        }
+    }
+    .cosplayImg {
+        width: 15rem;
+        height: 27rem;
+        border-radius: 2.06rem;
+        background-color: hsla(180, 3%, 94%, 0.8);
+        margin: 0rem 6.25rem;
+        img {
+            margin: 3.12rem 1.93rem;
+        }
+    }
+    
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 9.37rem;
+    .fondo {
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #2E76BB70;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

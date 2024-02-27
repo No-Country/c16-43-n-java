@@ -15,7 +15,11 @@ export class InicioComponent {
     login: boolean = false
     registro: boolean = false
 
-    mostrarLogin(paginaPrincipal: boolean, encabezado: boolean, piePagina: boolean, login: boolean, registro: boolean): void {
+    mostrarLogin(paginaPrincipal: boolean, 
+                 encabezado: boolean, 
+                 piePagina: boolean, 
+                 login: boolean, 
+                 registro: boolean): void {
       this.paginaPrincipal = paginaPrincipal;
       this.encabezado = encabezado;
       this.piePagina = piePagina;

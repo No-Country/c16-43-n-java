@@ -23,10 +23,16 @@
         display: flex;
         justify-content: center;
         .contenido {
-            .volverInicio {
-                margin-left: 1.25rem;
-                margin-top: 1.25rem;
+            .imgLogo {
+                display: flex;
+                justify-content: center;
+                margin-top: 8.18rem;
+                .volverInicio {
+                    width: 7.25rem;
+                    height: 6.93rem;
+                }
             }
+                
             p {
                 color: white;
                 text-align: center;
@@ -74,6 +80,8 @@
                     position: absolute;
                     margin-top: 0.62rem;
                     margin-left: 1.87rem;
+                    width: 1.62rem;
+                    height: 2.12rem;
                 }
                 .correo {
                     border: 0rem;

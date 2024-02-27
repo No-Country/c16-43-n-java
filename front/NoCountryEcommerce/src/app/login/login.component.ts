@@ -10,7 +10,7 @@ export class LoginComponent {
 
     constructor(private inicioComponent: InicioComponent) { }
     
-    mostrarLogin(): void {
+    mostrarInicio(): void {
         this.inicioComponent.mostrarLogin(true, true, true, false, false);
     }
 

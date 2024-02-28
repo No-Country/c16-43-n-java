@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { InicioComponent } from '../inicio/inicio.component';
 
 @Component({
@@ -7,10 +7,22 @@ import { InicioComponent } from '../inicio/inicio.component';
   styleUrls: ['./encabezado.component.scss']
 })
 export class EncabezadoComponent {
-  constructor(private inicioComponent: InicioComponent) { }
-  
-  mostrarLogin(): void {
-    this.inicioComponent.mostrarLogin(false, false, false, true, false);
-  }
+    productos: boolean = false
+
+    constructor(private inicioComponent: InicioComponent) { }
+    
+    mostrarLogin(): void {
+        this.inicioComponent.mostrarLogin(false, false, false, false, true, false);
+    }
+
+    mostrarProductos(): void {
+        this.productos = true
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
+    }
+
+    mostrarInicio(): void {
+        this.productos = false
+        this.inicioComponent.mostrarLogin(true, true, true, false, false, false);
+    }
 
 }

@@ -1,7 +1,9 @@
-<div class="logo">
-    <img src="../../assets/logo/Group (1).svg" alt="">
+<div class="logo" [class.productos-activados]="productos">
+    <p class="mInicio" (click)="mostrarInicio()">
+        <img src="../../assets/logo/Group (1).svg" alt="">
+    </p>
     <div class="enlaces">
-        <p>Productos</p>
+        <p (click)="mostrarProductos()" >Productos</p>
         <p>Servicios</p>
         <p>Contacto</p>
     </div>

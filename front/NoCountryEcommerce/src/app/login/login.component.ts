@@ -11,11 +11,11 @@ export class LoginComponent {
     constructor(private inicioComponent: InicioComponent) { }
     
     mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, true, false, false);
+        this.inicioComponent.mostrarLogin(true, true, true, false, false, false);
     }
 
     mostrarRegistro(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, true);
+        this.inicioComponent.mostrarLogin(false, false, false, false, false, true);
     }
 
 }

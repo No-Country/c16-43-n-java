@@ -4,8 +4,11 @@
     width: 100%;
     position: fixed;
     z-index: 2;
-    background-color: #0F6BB5B2;
-    background: linear-gradient(#0F6BB5B2 60%, transparent); 
+    background: linear-gradient(#0F6BB5B2 60%, transparent);
+    &.productos-activados {
+        background-color: #0f6ab5;
+        position: relative;
+      }
     .background-blur {
         position: absolute;
         top: 0;
@@ -15,9 +18,15 @@
         background-color: #0F6BB5B2;
         filter: blur(3.125rem);
     }
-    img {
-        width: 7.25rem;
-        margin-left: 6.5rem;
+    .mInicio {
+        display: flex;
+        align-items: center;
+        height: 12.25rem;
+        cursor: pointer;
+        img {
+            width: 7.25rem;
+            margin-left: 6.5rem;
+        }
     }
     .enlaces {
         display: flex;
@@ -31,6 +40,7 @@
             font-weight: 400;
             font-family: Raleway;
             color: white;
+            cursor: pointer;
         }
     }
     .loginCarrito {

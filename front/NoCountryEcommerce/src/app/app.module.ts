@@ -9,6 +9,7 @@ import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
+import { ProductosComponent } from './productos/productos.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RegistroComponent } from './registro/registro.component';
     PiePaginaComponent,
     LoginComponent,
     InicioComponent,
-    RegistroComponent
+    RegistroComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,

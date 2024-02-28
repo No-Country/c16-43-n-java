@@ -22,7 +22,7 @@ export class EncabezadoComponent {
 
     mostrarInicio(): void {
         this.productos = false
-        this.inicioComponent.mostrarLogin(true, true, true, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false);
     }
 
 }

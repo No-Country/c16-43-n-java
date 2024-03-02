@@ -9,15 +9,15 @@
     <p class="pCategorias">Categorias</p>
 </div>
 <div class="divCategorias">
-    <div class="hogar">
+    <div class="hogar" (click)="mostrarHogar()" >
         <img src="../../assets/hogar.svg" alt="">
         <p>Hogar</p>
     </div>
-    <div class="protesisDentales">
+    <div (click)="mostrarProtesisDentales()" class="protesisDentales">
         <img src="../../assets/protesisDentales.svg" alt="">
         <p class="pProtesisDentales" >Prótesis dentales</p>
     </div>
-    <div class="cosplayImg">
+    <div (click)="mostrarCosplay()" class="cosplayImg">
         <img src="../../assets/Cosplay.svg" alt="">
         <p>Cosplay</p>
     </div>

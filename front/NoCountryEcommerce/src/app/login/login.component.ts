@@ -10,12 +10,12 @@ export class LoginComponent {
 
     constructor(private inicioComponent: InicioComponent) { }
     
-    mostrarLogin(): void {
-        this.inicioComponent.mostrarLogin(true, true, true, false, false);
+    mostrarInicio(): void {
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false);
     }
 
     mostrarRegistro(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, true);
+        this.inicioComponent.mostrarLogin(false, false, false, false, false, true);
     }
 
 }

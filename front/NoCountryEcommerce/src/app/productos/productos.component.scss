@@ -1,0 +1,74 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    .contenido {
+        width: 109.37rem;
+        .pProductos {
+            display: flex;
+            justify-content: center;
+            font-size: 1.56rem;
+            font-family: Raleway;
+            margin-top: 4.06rem;
+        }
+        .dHogar {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            p {
+                font-family: Raleway;
+                font-size: 1.56rem;
+            }
+            hr {
+                width: 103rem;
+                margin: 2.81rem 0rem 0rem 0rem;
+                border: 0.13rem solid rgba(253, 185, 0, 1)
+                
+            }
+        }
+        .dProtesisDentales {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            p {
+                font-family: Raleway;
+                font-size: 1.56rem;
+            }
+            hr {
+                width: 95rem;
+                margin: 2.81rem 0rem 0rem 0rem;
+                border: 0.13rem solid rgba(253, 185, 0, 1)
+            }
+        }
+        .dCosplay {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            p {
+                font-family: Raleway;
+                font-size: 1.56rem;
+            }
+            hr {
+                width: 102rem;
+                margin: 2.81rem 0rem 0rem 0rem;
+                border: 0.13rem solid rgba(253, 185, 0, 1)
+            }
+        }
+        .dProductos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 40rem;
+            margin-bottom: 3.12rem;
+            .tarjeta {
+                width: 22.18rem;
+                height: 40rem;
+                background-color: rgba(238, 239, 239, 0.8);
+                border-radius: 0.62rem;
+                box-shadow: 0.25rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+

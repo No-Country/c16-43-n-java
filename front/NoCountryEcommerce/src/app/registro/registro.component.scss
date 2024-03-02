@@ -11,6 +11,20 @@
         box-shadow: inset 0rem 0.25rem 2.75rem 0rem rgba(0, 0, 0, 0.25);
         .contenido2 {
             width: 31.56rem;
+            .contLogo {
+                display: flex;
+                justify-content: center;
+                margin-top: 8.60rem;
+                margin-bottom: 3.43rem;
+                a {
+                    width: 7.25rem;
+                    height: 6.93rem;
+                    .volverInicio {
+                        width: 7.25rem;
+                        height: 6.93rem;
+                    }
+                }
+            }
             .titulo {
                 font-size: 1.56rem;
                 margin: 9.12rem 0rem 3.12rem 0rem;

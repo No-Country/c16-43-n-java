@@ -1,0 +1,38 @@
+<div class="principal">
+    <div class="contenido">
+        <p class="pProductos" >Productos</p>
+        <div *ngIf="hogar" >
+            <div class="dHogar">
+                <p>Hogar</p>
+                <hr>
+            </div>
+            <div class="dProductos">
+                <div *ngFor="let producto of productos" class="tarjeta">
+                    
+                </div>
+            </div>
+        </div>
+        <div *ngIf="protesisDentales" >
+            <div class="dProtesisDentales">
+                <p>Prótesis dentales</p>
+                <hr>
+            </div>
+            <div class="dProductos">
+                <div *ngFor="let producto of productos" class="tarjeta">
+                    
+                </div>
+            </div>
+        </div>
+        <div *ngIf="cosplay" >
+            <div class="dCosplay">
+                <p>Cosplay</p>
+                <hr>
+            </div>
+            <div class="dProductos">
+                <div *ngFor="let producto of productos" class="tarjeta">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

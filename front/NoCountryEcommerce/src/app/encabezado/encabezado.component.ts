@@ -1,6 +1,7 @@
 import { Component, DoCheck } from '@angular/core';
 import { InicioComponent } from '../inicio/inicio.component';
 import { EstiloEncabezadoService } from '../estilo-encabezado.service';
+import { CategoriasService } from '../categorias.service';
 
 @Component({
   selector: 'app-encabezado',
@@ -9,8 +10,9 @@ import { EstiloEncabezadoService } from '../estilo-encabezado.service';
 })
 export class EncabezadoComponent implements DoCheck {
     estiloEncabezado: boolean = false
-    
+
     constructor(private inicioComponent: InicioComponent, 
+                private categoriasService: CategoriasService,
                 private estiloEncabezadoService: EstiloEncabezadoService) { }
 
     ngDoCheck(): void {
@@ -20,6 +22,9 @@ export class EncabezadoComponent implements DoCheck {
     mostrarProductos(): void {
         this.estiloEncabezadoService.setEstiloEncabezado(true);
         this.estiloEncabezado = this.estiloEncabezadoService.getEstiloEncabezado()
+        this.categoriasService.setHogar(true)
+        this.categoriasService.setProtesisDentales(true)
+        this.categoriasService.setCosplay(true)
         this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
     }
 

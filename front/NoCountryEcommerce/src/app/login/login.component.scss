@@ -77,6 +77,12 @@
                     }
                 }
             }
+            .alerta {
+                display: flex;
+                margin: 1.25rem 0rem 0rem 0rem;
+                font-weight: 600;
+                font-size: 1.12rem;
+            }
             .dContraseña {
                 margin-top: 3.12rem;
                 .imgContraseña {
@@ -117,6 +123,10 @@
                     font-family: Raleway;
                     font-size: 1.56rem;
                     border-radius: 2.31rem;
+                    cursor: pointer;
+                    &.alerta-activada {
+                        margin-top: 1rem;
+                    }
                 }
             }
             .pOlvido {

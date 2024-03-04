@@ -11,7 +11,7 @@ export class RegistroComponent {
   constructor(private inicioComponent: InicioComponent) { }
     
     mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false);
     }
 
 }

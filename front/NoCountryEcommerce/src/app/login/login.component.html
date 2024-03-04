@@ -10,16 +10,19 @@
                     <img class="volverInicio" src="../../assets/logo/Group (1).svg" alt="">
                 </a>
             </div>
-            <div class="dCorreo">
-                <img src="../../assets/login/correo.svg" alt="">
-                <input type="" placeholder="Correo" class="correo">
-            </div>
-            <div class="dContraseña">
-                <img class="imgContraseña" src="../../assets/login/contraseña.svg" alt="">
-                <input type="email" placeholder="Contraseña" class="correo" type="password">
-            </div>
+            <form (ngSubmit)="onSubmit()" >
+                <div class="dCorreo">
+                    <img src="../../assets/login/correo.svg" alt="">
+                    <input type="" placeholder="Correo" class="correo" name="correo" [(ngModel)]="correo">
+                </div>
+                <div class="dContraseña">
+                    <img class="imgContraseña" src="../../assets/login/contraseña.svg" alt="">
+                    <input placeholder="Contraseña" class="correo" type="password" name="contrasena" [(ngModel)]="contrasena">
+                </div>
+                <p *ngIf="alerta" class="alerta">Por favor complete todos los campos.</p>
+            </form>
             <div class="dButton">
-                <button>INICIAR SESIÓN</button>
+                <button (click)="onSubmit()" [class.alerta-activada]="alerta" >INICIAR SESIÓN</button>
             </div>
             <p class="pOlvido" >¿Olvido su contraseña?</p>
             <p (click)="mostrarRegistro()" class="pRegistrarse">Registrarse</p>

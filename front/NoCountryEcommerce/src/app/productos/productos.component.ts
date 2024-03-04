@@ -1,6 +1,7 @@
 import { Component, DoCheck } from '@angular/core';
 import { Producto } from '../interfaces/producto.interfaces';
-import { CategoriasService } from '../categorias.service';
+import { CategoriasService } from '../services/categorias.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-productos',
@@ -12,23 +13,33 @@ export class ProductosComponent implements DoCheck {
     hogar: boolean = true
     protesisDentales: boolean = true
     cosplay: boolean = true
-
     productos: Producto[] = []
     estiloEncabezadoService: any;
     estiloEncabezado: any;
+    productosHogar: Producto[] = []
+    productosProtesisDental: Producto[] = []
+    productosCosplay: Producto[] = []
 
-    constructor(private categoriasService: CategoriasService) {
+    constructor(private categoriasService: CategoriasService,
+                private http: HttpClient) {}
 
-        // Agrega 5 elementos al arreglo
-        for (let i = 0; i < 4; i++) {
-            this.productos.push({
-            nombre: 'Nombre del producto ' + (i + 1),
-            descripcion: 'Descripción del producto ' + (i + 1),
-            link: 'Enlace del producto ' + (i + 1),
-            alto: 10, // Por ejemplo, asigna un valor específico
-            ancho: 20 // Por ejemplo, asigna un valor específico
-            });
-        }
+    ngOnInit(): void {
+        const usuario = 'admin@printopia.com';
+        const password = 'Admin123';
+
+        const credenciales = btoa(usuario + ':' + password);
+
+    // Crea el encabezado de autorización
+        const headers = new HttpHeaders({
+            'Authorization': 'Basic ' + credenciales
+        });
+
+        this.http.get<Producto[]>('https://printopia-backend.onrender.com/api/products', { headers }).subscribe((listaProductos: Producto[]) => {
+            this.productos = listaProductos
+            this.productosHogar = this.productos.filter(productos => productos.category.name == "Hogar")
+            this.productosProtesisDental = this.productos.filter(productos => productos.category.name == "Protesis")
+            this.productosCosplay = this.productos.filter(productos => productos.category.name == "Cosplay")
+        });
     }
 
     ngDoCheck(): void {

@@ -8,9 +8,20 @@
         <p>Contacto</p>
     </div>
     <div class="loginCarrito">
-        <p class="login" (click)="mostrarLogin()">
-            <img src="../../assets/login.svg" alt="">
-        </p>
-        <img src="../../assets/carrito.svg" alt="" class="carrito">
+        <div class="sinIniciar" *ngIf="!inicioSesion">
+            <p class="login" (click)="mostrarLogin()">
+                <img src="../../assets/login.svg" alt="">
+            </p>
+            <img src="../../assets/carrito.svg" alt="" class="carrito">
+        </div>
+        <div class="iniciada" *ngIf="inicioSesion">
+            <div class="sesion" (click)="mostrarAdministradorProductos()">
+                <img class="sesionIniciada" src="../../assets/sesionIniciada.svg" alt="">
+                <p class="pSesion" >¡Hola! German Osimani</p>
+            </div>
+            <p class="pFinalizar" (click)="finalizarSesion()">
+                <img class="finalizarSesion" src="../../assets/finalizarSesion.svg" alt="">
+            </p>
+        </div>
     </div>
 </div>

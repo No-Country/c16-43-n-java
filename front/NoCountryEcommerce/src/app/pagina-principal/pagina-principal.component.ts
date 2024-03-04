@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { InicioComponent } from '../inicio/inicio.component';
-import { EstiloEncabezadoService } from '../estilo-encabezado.service';
-import { CategoriasService } from '../categorias.service';
+import { EstiloEncabezadoService } from '../services/estilo-encabezado.service';
+import { CategoriasService } from '../services/categorias.service';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -24,7 +24,7 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(false)
         this.categoriasService.setCosplay(false)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false);
     }
 
     mostrarProtesisDentales(): void{
@@ -32,7 +32,7 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(true)
         this.categoriasService.setCosplay(false)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false);
     }
 
     mostrarCosplay(): void{
@@ -40,7 +40,7 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(false)
         this.categoriasService.setCosplay(true)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false);
     }
 
 }

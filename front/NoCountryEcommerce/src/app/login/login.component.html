@@ -13,13 +13,17 @@
             <form (ngSubmit)="onSubmit()" >
                 <div class="dCorreo">
                     <img src="../../assets/login/correo.svg" alt="">
-                    <input type="" placeholder="Correo" class="correo" name="correo" [(ngModel)]="correo">
+                    <input type="" placeholder="Correo" class="correo" name="correo" [(ngModel)]="correo" autocomplete="off">
                 </div>
                 <div class="dContraseña">
                     <img class="imgContraseña" src="../../assets/login/contraseña.svg" alt="">
-                    <input placeholder="Contraseña" class="correo" type="password" name="contrasena" [(ngModel)]="contrasena">
+                    <input type="password" placeholder="Contraseña" class="correo"  name="contrasena" [(ngModel)]="contrasena">
                 </div>
                 <p *ngIf="alerta" class="alerta">Por favor complete todos los campos.</p>
+                <p *ngIf="alerta2" class="alerta">Usuario y/o contraseña incorrectos</p>
+                <div *ngIf="mostrarCarga">
+                    <p class="alerta">Iniciando sesión... <i class="fas fa-spinner fa-spin" ></i></p>
+                </div>
             </form>
             <div class="dButton">
                 <button (click)="onSubmit()" [class.alerta-activada]="alerta" >INICIAR SESIÓN</button>

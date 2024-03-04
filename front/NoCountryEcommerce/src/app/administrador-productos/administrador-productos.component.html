@@ -1,0 +1,64 @@
+<div class="principal">
+    <div class="administradorVentas">
+        <p class="administrador" >Administrador</p>
+        <p>Ventas</p>
+    </div>
+    <div class="dButton">
+        <button class="button" >Agregar nuevo roducto</button>
+    </div>
+    <div class="productos">
+        <div class="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Tipo de producto</th>
+                        <th>Nombre del producto</th>
+                        <th>Descripción</th>
+                        <th>Medidas</th>
+                        <th>Precio</th>
+                        <th>SKU</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí puedes añadir filas con datos de tus productos -->
+                    <tr *ngFor="let producto of productos">
+                        <td>{{producto.id}}</td>
+                        <td>{{producto.category.name}}</td>
+                        <td>{{producto.name}}</td>
+                        <td>{{producto.description}}</td>
+                        <td>
+                            <p>Ancho: {{producto.width}}</p>
+                            <p>Alto: {{producto.height}}</p>
+                            <p>Largo: {{producto.depth}}</p>
+                        </td>
+                        <td>$ {{producto.price}}</td>
+                        <td>{{producto.sku}}</td>
+                        <td class="tdFoto">
+                            <img src="{{producto.photo}}" alt="">
+                        </td>
+                        <td class="tdEditar">
+                            <button class="editar">Editar</button>
+                        </td>
+                        <td class="tdBorrar">
+                            <button class="borrar">
+                                <img src="../../assets/Cruz.svg" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr  class="linea">
+                        <td colspan="8">
+                            <hr>
+                        </td>
+                    </tr>
+                    <!-- Puedes añadir más filas según necesites -->
+                </tbody>
+            </table>
+            <div class="dButton">
+                <button class="buttonAceptar">Aceptar</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

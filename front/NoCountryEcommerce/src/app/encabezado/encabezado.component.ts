@@ -10,7 +10,7 @@ import { InicioSesionService } from '../services/inicio-sesion.service';
   styleUrls: ['./encabezado.component.scss']
 })
 export class EncabezadoComponent implements DoCheck {
-    estiloEncabezado: boolean = false
+    estiloEncabezado: boolean = true
     inicioSesion: boolean = false
 
     constructor(private inicioComponent: InicioComponent, 

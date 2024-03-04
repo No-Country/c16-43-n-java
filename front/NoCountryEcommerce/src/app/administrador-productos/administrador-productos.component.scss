@@ -31,48 +31,90 @@
     .productos {
         display: flex;
         justify-content: center;
-        table {
-            width: 1800px;
-            font-family: Raleway;
-            color: rgba(7, 29, 48, 1);
-            thead {
-                tr {
-                    th {
-                        font-weight: 400;
+        .contenedor {
+            table {
+                width: 1800px;
+                font-family: Raleway;
+                color: rgba(7, 29, 48, 1);
+                thead {
+                    tr {
+                        th {
+                            font-weight: 400;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        height: 120px;
+                        td {
+                            text-align: center;
+                            font-size: 14px;
+                            .editar {
+                                width: 88px;
+                                height: 48px;
+                                background-color: rgba(238, 239, 239, 1);
+                                border: 0px;
+                                padding: 0px;
+                                border-radius: 17px;
+                                color: rgba(7, 29, 48, 1);
+                                font-size: 16px;
+                            }
+                        }
+                        .tdFoto {
+                            width: 86px;
+                            height: 86px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .tdEditar {
+                            button {
+                                margin-left: 10px;
+                            }
+                        }
+                        .tdBorrar {
+                            margin-left: 10px;
+                            .borrar {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                                border: 0px;
+                                padding: 0px;
+                                background-color: rgba(1, 127, 141, 1);
+                                color: white;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .linea {
+                        height: 50px;
+                        padding: 0;
+                        hr {
+                            width: 102rem;
+                            
+                            border: 0.13rem solid rgba(253, 185, 0, 1)
+                        }
                     }
                 }
             }
-            tbody {
-                tr {
-                    height: 120px;
-                    td {
-                        text-align: center;
-                        font-size: 14px;
-                        .editar {
-                            width: 88px;
-                            height: 48px;
-                            background-color: rgba(238, 239, 239, 1);
-                            border: 0px;
-                            padding: 0px;
-                            border-radius: 17px;
-                            color: rgba(7, 29, 48, 1);
-                            font-size: 16px;
-                        }
-                        .borrar {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 36px;
-                            height: 36px;
-                            border-radius: 50%;
-                            border: 0px;
-                            padding: 0px;
-                            background-color: rgba(1, 127, 141, 1);
-                            color: white;
-                        }
-                    }
+            .dButton {
+                display: flex;
+                justify-content: end;
+                .buttonAceptar {
+                    width: 141px;
+                    height: 48px;
+                    border: 0px;
+                    padding: 0px;
+                    border-radius: 17px;
+                    background-color: rgba(92, 207, 190, 1);
+                    color: white;
+                    font-family: Raleway;
                 }
             }
         }
+        
     }
 }

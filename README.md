@@ -49,4 +49,4 @@ El proyecto Ecommerce Printopia es una plataforma de comercio electr√≥nico dise√
 ## Enlaces del Proyecto:
 - Repositorio en GitHub: [Ecommerce-Printopia](https://github.com/No-Country/c16-43-n-java)
 - Sitio web: [www.ecommerce-Printopia.com](https://no-country-flame.vercel.app/)
-- Figma: https://www.figma.com/file/8cUjDHUg1qXKbudi5UHwBS/Untitled?type=design&node-id=0-1&mode=design&t=UieIymAQx50AuGWN-0
+- Figma: [www.figma-Printopia.com](https://www.figma.com/file/8cUjDHUg1qXKbudi5UHwBS/Untitled?type=design&node-id=0-1&mode=design&t=UieIymAQx50AuGWN-0)

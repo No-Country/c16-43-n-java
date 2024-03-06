@@ -1,0 +1,169 @@
+/* modal.component.css */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 239, 239, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-family: Raleway;
+  }
+  
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    width: 985px;
+    height: 612px;
+    background-color: rgba(254, 254, 254, 1);
+    box-shadow: 20px 20px 47px 0px rgba(0, 0, 0, 0.38);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  .modal-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    .principal {
+        .contenedor {
+            margin-top: 40px;
+            p {
+                height: 29px;
+                font-size: 25px;
+                margin: 0px 0px 0px 15px;
+                color: rgba(7, 29, 48, 1);
+            }
+            hr {
+                width: 900px;
+                border: 0.13rem solid rgba(253, 185, 0, 1)
+            }
+
+        }
+        .contenedorCampos {
+            display: flex;
+            width: 900px;
+            .izquierda {
+                width: 380px;
+                margin-right: 20px;
+                p {
+                    margin: 0px;
+                    margin: 30px 0px 0px 15px;
+                    font-size: 16px;
+                }
+                input {
+                    width: 365px;
+                    border: 0;
+                    border-bottom: 2px solid rgba(238, 239, 239, 1);
+                    padding: 0;
+                    color: black;
+                    margin-left: 15px;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-family: Raleway;
+                    padding-bottom: 2px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .precioSku {
+                    display: flex;
+                    justify-content: space-between;
+                    .precio {
+                        width: 163px;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    .sku {
+                        width: 163px;
+                        input {
+                            width: 100%;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+            .derecha {
+                width: 365px;
+                margin-left: 20px;
+                p {
+                    margin: 0px;
+                    margin: 30px 0px 0px 15px;
+                    font-size: 16px;
+                }
+                input {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 2px solid rgba(238, 239, 239, 1);
+                    padding: 0;
+                    color: black;
+                    margin-left: 15px;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-family: Raleway;
+                    padding-bottom: 2px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .cantCodigo {
+                    display: flex;
+                    justify-content: space-between;
+                    .cantidad {
+                        width: 163px;
+                        &input {
+                            width: 100%;
+                        }
+                    }
+                    .codigo {
+                        width: 163px;
+                        &input {
+                            width: 100%;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .botones {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            button {
+                width: 141px;
+                height: 48px;
+                border: 0;
+                padding: 0px;
+                border-radius: 17px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .cancelar {
+                background-color: rgba(238, 239, 239, 1);
+                margin-right: 30px;
+                
+            }
+            .agregar {
+                background-color: rgba(253, 185, 0, 1);
+                color: white;
+            }
+        }
+    }
+  }
+  

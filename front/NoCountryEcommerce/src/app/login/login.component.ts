@@ -32,11 +32,11 @@ export class LoginComponent {
 
     onSubmit() {
         this.alerta2 = false
+        this.alerta = false
         if (this.correo.trim() === '' || this.contrasena.trim() === '') {
             this.alerta = true
             return;
-          }
-          this.alerta = false
+        }
 
         const datos = {
             email: this.correo,

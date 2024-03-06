@@ -13,6 +13,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ProductosComponent } from './productos/productos.component';
 import { AdministradorProductosComponent } from './administrador-productos/administrador-productos.component';
+import { AgregarProductosComponent } from './agregar-productos/agregar-productos.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AdministradorProductosComponent } from './administrador-productos/admin
     RegistroComponent,
     ProductosComponent,
     AdministradorProductosComponent,
+    AgregarProductosComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,10 @@
             <div class="dProductos">
                 <div *ngFor="let producto of productosHogar" class="tarjeta">
                     <img src="{{producto.photo}}" alt="">
-                    <p>{{producto.name}}</p>
+                    <div class="detalleProducto">
+                        <p>{{producto.name}}</p>
+                        <p class="pPrecio">${{producto.price}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -21,7 +24,10 @@
             <div class="dProductos">
                 <div *ngFor="let producto of productosProtesisDental" class="tarjeta">
                     <img src="{{producto.photo}}" alt="">
-                    <p>{{producto.name}}</p>
+                    <div class="detalleProducto">
+                        <p>{{producto.name}}</p>
+                        <p class="pPrecio">${{producto.price}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,7 +39,10 @@
             <div class="dProductos">
                 <div *ngFor="let producto of productosCosplay" class="tarjeta">
                     <img src="{{producto.photo}}" alt="">
-                    <p>{{producto.name}}</p>
+                    <div class="detalleProducto">
+                        <p>{{producto.name}}</p>
+                        <p class="pPrecio">${{producto.price}}</p>
+                    </div>
                 </div>
             </div>
         </div>

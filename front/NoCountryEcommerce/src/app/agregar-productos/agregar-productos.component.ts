@@ -14,8 +14,6 @@ export class AgregarProductosComponent {
     
     constructor(private http: HttpClient) { }
 
-
-
     cerrarModal(): void {
         this.cerrado.emit();
     }

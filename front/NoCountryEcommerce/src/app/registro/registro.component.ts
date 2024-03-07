@@ -53,7 +53,7 @@ export class RegistroComponent {
             this.alertaVacio = true
         }
         
-        if (this.aceptarTerminos && !this.contraseniasNoCoinciden) {
+        if (this.aceptarTerminos && !this.contraseniasNoCoinciden && !this.alertaVacio) {
             this.mostrarCarga = true;
             this.http.post('https://printopia-backend.onrender.com/api/users/register', this.usuario).subscribe({
                 next: response => {

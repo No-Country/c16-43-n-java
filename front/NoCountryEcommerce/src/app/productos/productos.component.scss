@@ -1,5 +1,6 @@
 .principal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 255, 1);
     .contenido {
@@ -40,6 +41,11 @@
                 border: 0.13rem solid rgba(253, 185, 0, 1)
             }
         }
+        .cosplay {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
         .dCosplay {
             display: flex;
             width: 100%;
@@ -56,20 +62,34 @@
         }
         .dProductos {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
             width: 100%;
-            height: 40rem;
+            // height: 40rem;
             margin-bottom: 3.12rem;
             .tarjeta {
+                display: flex;
+                flex-wrap: wrap;
                 width: 22.18rem;
                 height: 40rem;
                 background-color: rgba(238, 239, 239, 0.8);
                 border-radius: 0.62rem;
-                box-shadow: 0.25rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+                margin: 20px;
                 img {
                     width: 100%;
                     height: 100%;
+                }
+                .detalleProducto {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    p {
+                        font-size: 14px;
+                        font-family: Raleway;
+                    }
+                    .pPrecio {
+                        font-weight: 500;
+                    }
                 }
             }
         }

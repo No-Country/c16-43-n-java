@@ -1,22 +1,22 @@
 export interface Producto {
-    id: number,
+    id:number | null
     name: string,
     description: string,
     type:string,
     sku:string,
     barCode: string,
-    weight: number,
-    height: number,
-    width: number,
-    depth: number,
+    weight: number | null,
+    height: number | null,
+    width: number | null,
+    depth: number | null,
     showInStore: boolean,
-    isPromotional: boolean,
-    price: number,
-    promotionPrice: number,
-    stock: number,
-    photo: string,
+    isPromotional: boolean | null,
+    price: number | null,
+    promotionPrice: number | null,
+    stock: number | null,
+    photo: string | null,
     category: {
-        id: number,
+        id: number | null,
         name: string,
         description: string
     }

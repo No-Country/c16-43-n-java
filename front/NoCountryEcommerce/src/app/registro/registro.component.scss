@@ -81,7 +81,7 @@
             .check {
                 display: flex;
                 align-items: center;
-                position: absolute;
+                position: relative;
                 margin-top: 0.62rem;
                 margin-left: 1.87rem;
                 input {
@@ -91,6 +91,20 @@
                     margin-left: 0.31rem;
                     font-size: 0.87rem;
                     color: rgba(254, 254, 254, 1);
+                }
+            }
+            .alertas {
+                text-align: center;
+                p {
+                    display: flex;
+                    margin: 0.5rem 0rem 0rem 0rem;
+                    font-weight: 600;
+                    font-size: 1.12rem;
+                    color: white;
+
+                }
+                .alertaContrasenas {
+                    margin: 0.5rem 0rem 0rem 0rem;
                 }
             }
             button {

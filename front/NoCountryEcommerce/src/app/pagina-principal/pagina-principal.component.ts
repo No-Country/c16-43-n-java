@@ -14,11 +14,6 @@ export class PaginaPrincipalComponent {
                 private categoriasService: CategoriasService,
                 private estiloEncabezadoService: EstiloEncabezadoService) { }
 
-    // mostrarProductos(): void {
-    //     this.estiloEncabezadoService.setEstiloEncabezado(true);
-    //     this.inicioComponent.mostrarLogin(true, false, true, true, false, false);
-    // }
-
     mostrarHogar(): void{
         this.categoriasService.setHogar(true)
         this.categoriasService.setProtesisDentales(false)

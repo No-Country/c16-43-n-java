@@ -4,7 +4,10 @@
         <p>Ventas</p>
     </div>
     <div class="dButton">
-        <button class="button" >Agregar nuevo roducto</button>
+        <app-agregar-productos *ngIf="modalAbierto" (cerrado)="cerrarModal()">
+            
+        </app-agregar-productos>
+        <button class="button" (click)="abrirModal()">Agregar nuevo roducto</button>
     </div>
     <div class="productos">
         <div class="contenedor">
@@ -12,7 +15,7 @@
                 <thead>
                     <tr>
                         <th>Código</th>
-                        <th>Tipo de producto</th>
+                        <th>Categoria</th>
                         <th>Nombre del producto</th>
                         <th>Descripción</th>
                         <th>Medidas</th>
@@ -20,9 +23,9 @@
                         <th>SKU</th>
                         <th>Imagen</th>
                     </tr>
+                    <div class="separador"></div>
                 </thead>
                 <tbody>
-                    <!-- Aquí puedes añadir filas con datos de tus productos -->
                     <tr *ngFor="let producto of productos">
                         <td>{{producto.id}}</td>
                         <td>{{producto.category.name}}</td>
@@ -52,11 +55,10 @@
                             <hr>
                         </td>
                     </tr>
-                    <!-- Puedes añadir más filas según necesites -->
                 </tbody>
             </table>
             <div class="dButton">
-                <button class="buttonAceptar">Aceptar</button>
+                <button class="buttonAceptar" (click)="mostrarInicio()">Aceptar</button>
             </div>
         </div>
         

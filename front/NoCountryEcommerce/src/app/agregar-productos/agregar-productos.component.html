@@ -12,49 +12,49 @@
             <div class="contenedorCampos">
                 <div class="izquierda">
                     <p>Categoria</p>
-                    <select name="" id="">
+                    <select name="seleccionCategoria" id="seleccionCategoria" (change)="onCategoryChange($event)">
                         <option value="opcion1">Hogar</option>
                         <option value="opcion2">Protesis</option>
                         <option value="opcion3">Cosplay</option>
                     </select>
                     <hr>
                     <p>Descripción</p>
-                    <input type="text">
+                    <input type="text" name="descripcion" [(ngModel)]="producto.description">
                     <div class="precioSku">
                         <div class="precio">
                             <p>Precio</p>
-                            <input type="number">
+                            <input type="number" name="precio" [(ngModel)]="producto.price">
                         </div>
                         <div class="sku">
                             <p>SKU</p>
-                            <input type="number">
+                            <input type="number" name="sku" [(ngModel)]="producto.sku">
                         </div>
                     </div>
                     <p>URL imagen</p>
-                    <input type="text">
+                    <input type="text" name="urlFoto" [(ngModel)]="producto.photo">
                 </div>
                 <div class="derecha">
                     <p>Nombre del producto</p>
-                    <input type="text">
+                    <input type="text" name="nombre" [(ngModel)]="producto.name">
                     <p>Medidas</p>
-                    <input type="number" placeholder="Ancho">
-                    <input type="number" placeholder="Alto">
-                    <input type="number" placeholder="Largo">
+                    <input type="number" placeholder="Ancho" name="ancho" [(ngModel)]="producto.width">
+                    <input type="number" placeholder="Alto" name="alto" [(ngModel)]="producto.height">
+                    <input type="number" placeholder="Largo" name="largo" [(ngModel)]="producto.depth">
                     <div class="cantCodigo">
                         <div class="cantidad">
                             <p>Cantidad</p>
-                            <input type="number">
+                            <input type="number" name="cantidad" [(ngModel)]="producto.stock">
                         </div>
                         <div class="codigo">
                             <p>Código</p>
-                            <input type="text">
+                            <input type="text" name="codigo" [(ngModel)]="producto.barCode">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="botones">
                 <button class="cancelar" (click)="cerrarModal()">Cancelar</button>
-                <button class="agregar">Agregar</button>
+                <button class="agregar" (click)="agregarProducto()">Agregar</button>
             </div>
         </div>
         <ng-content></ng-content>

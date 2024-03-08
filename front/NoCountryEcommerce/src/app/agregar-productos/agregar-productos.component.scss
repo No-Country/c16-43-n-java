@@ -50,7 +50,7 @@
             }
             hr {
                 width: 900px;
-                border: 0.13rem solid rgba(253, 185, 0, 1)
+                border: 2px solid rgba(253, 185, 0, 1)
             }
 
         }
@@ -71,6 +71,7 @@
                     border: 0px;
                     background: transparent;
                     font-family: Raleway;
+                    font-size: 14px;
                     &:focus {
                         outline: none;
                     }

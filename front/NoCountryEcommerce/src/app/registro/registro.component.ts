@@ -9,7 +9,6 @@ import { Usuario } from '../interfaces/user.interface';
   styleUrls: ['./registro.component.scss']
 })
 export class RegistroComponent {
-
     usuario: Usuario = {
         email: '',
         name: '',
@@ -19,7 +18,6 @@ export class RegistroComponent {
         disabled: false,
         role: 'USER'
     };
-
     confirmacionContrasenia: string = '';
     contraseniasNoCoinciden: boolean = false;
     aceptarTerminos: boolean = false;
@@ -75,10 +73,10 @@ export class RegistroComponent {
         this.contraseniasNoCoinciden = this.usuario.password !== this.confirmacionContrasenia;
     }
     mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false, false);
     }
 
     mostrarLogin(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false);
+        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false, false, false);
     }
 }

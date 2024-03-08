@@ -13,9 +13,9 @@
                 <div class="izquierda">
                     <p>Categoria</p>
                     <select name="seleccionCategoria" id="seleccionCategoria" (change)="onCategoryChange($event)">
-                        <option value="opcion1">Hogar</option>
-                        <option value="opcion2">Protesis</option>
-                        <option value="opcion3">Cosplay</option>
+                        <option value="opcion1" [selected]="productoSeleccionado?.category?.id === 1">Hogar</option>
+                        <option value="opcion2" [selected]="productoSeleccionado?.category?.id === 2">Protesis</option>
+                        <option value="opcion3" [selected]="productoSeleccionado?.category?.id === 3">Cosplay</option>
                     </select>
                     <hr>
                     <p>Descripción</p>
@@ -54,7 +54,7 @@
             </div>
             <div class="botones">
                 <button class="cancelar" (click)="cerrarModal()">Cancelar</button>
-                <button class="agregar" (click)="agregarProducto()">Agregar</button>
+                <button class="agregar" (click)="manejarClick(); cerrarModal()">Agregar</button>
             </div>
         </div>
         <ng-content></ng-content>

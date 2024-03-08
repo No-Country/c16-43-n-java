@@ -10,7 +10,7 @@ import { InicioSesionService } from '../services/inicio-sesion.service';
   styleUrls: ['./encabezado.component.scss']
 })
 export class EncabezadoComponent implements DoCheck {
-    estiloEncabezado: boolean = true
+    estiloEncabezado: boolean = false
     inicioSesion: boolean = true
 
     constructor(private inicioComponent: InicioComponent, 
@@ -29,28 +29,28 @@ export class EncabezadoComponent implements DoCheck {
         this.categoriasService.setHogar(true)
         this.categoriasService.setProtesisDentales(true)
         this.categoriasService.setCosplay(true)
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false);
     }
 
     mostrarLogin(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false);
+        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false, false);
     }
 
     mostrarInicio(): void {
         this.estiloEncabezadoService.setEstiloEncabezado(false);
         this.estiloEncabezado = this.estiloEncabezadoService.getEstiloEncabezado()
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false);
     }
 
     finalizarSesion(): void {
         this.inicioSesionService.setInicioSesion(false)
         this.estiloEncabezadoService.setEstiloEncabezado(false);
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false);
     }
 
     mostrarAdministradorProductos(): void {
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, true)
+        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, true, false)
     }
 
 }

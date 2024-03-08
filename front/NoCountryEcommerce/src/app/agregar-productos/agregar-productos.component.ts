@@ -1,7 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 import { Producto } from '../interfaces/producto.interfaces';
-import { NONE_TYPE } from '@angular/compiler';
+import { CrearModificarService } from '../services/crear-modificar.service';
+import { AdministrarProductosService } from '../services/administrar-productos.service';
 
 @Component({
     selector: 'app-agregar-productos',
@@ -9,7 +11,6 @@ import { NONE_TYPE } from '@angular/compiler';
     styleUrls: ['./agregar-productos.component.scss']
 })
 export class AgregarProductosComponent {
-    
     producto: Producto = {
         id: null,
         name: "",
@@ -33,39 +34,98 @@ export class AgregarProductosComponent {
             description: ""
             }
     }
-
-    
-    @Output() cerrado = new EventEmitter<void>();
+    descripcion: string = '';
+    precio: number | null = 0;
+    sku: string = '';
+    photo: string | null = '';
+    modificarCrearProducto: boolean = true
     titulo: string = "Modal";
+    @Input() productoSeleccionado: Producto | null = null;
+    @Output() productoAgregado = new EventEmitter<Producto>();
+    @Output() cerrado = new EventEmitter<void>();
     
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient,
+                private crearModificarService: CrearModificarService,
+                private administrarProductosService: AdministrarProductosService) { }
 
-    // mostrarCategoria() {
-    //   console.log(this.producto.category.id);
-    // }
-    
+    ngDoCheck(): void {
+        this.modificarCrearProducto = this.crearModificarService.getCrearModificar()
+        }
+
+    ngOnInit(): void {
+        if (this.productoSeleccionado) {
+          this.producto.description = this.productoSeleccionado.description;
+          this.producto.price = this.productoSeleccionado.price;
+          this.producto.sku = this.productoSeleccionado.sku;
+          this.producto.photo = this.productoSeleccionado.photo;
+          this.producto.name = this.productoSeleccionado.name;
+          this.producto.width = this.productoSeleccionado.width;
+          this.producto.height = this.productoSeleccionado.height;
+          this.producto.depth = this.productoSeleccionado.depth;
+          this.producto.stock = this.productoSeleccionado.stock
+          this.producto.barCode = this.productoSeleccionado.barCode
+          this.producto.id = this.productoSeleccionado.id
+          this.producto.category.id = this.productoSeleccionado.category.id
+        }
+    }
 
     agregarProducto() {
+        this.productoSeleccionado = null
         
         const usuario = 'admin@printopia.com';
         const password = 'Admin123';
-
         const credenciales = btoa(usuario + ':' + password);
-
-    // Crea el encabezado de autorización
         const headers = new HttpHeaders({
             'Authorization': 'Basic ' + credenciales
         });
 
-        console.log(this.producto);
         this.http.post('https://printopia-backend.onrender.com/api/products/create', this.producto, {headers}).subscribe({
                 next: response => {
                     console.log("Respuesta del servidor:", response);
+                    const productoResponse = response as Producto;
+                    this.administrarProductosService.agregarProducto(productoResponse)
                 },
                 error: error => {
                     console.error("Error al enviar los datos:", error);
                 }
             });
+    }
+
+    actualizarProducto() {
+        const usuario = 'admin@printopia.com';
+        const password = 'Admin123';
+
+        const credenciales = btoa(usuario + ':' + password);
+
+        const headers = new HttpHeaders({
+            'Authorization': 'Basic ' + credenciales
+        });
+
+        const url = 'https://printopia-backend.onrender.com/api/products/update/' + this.producto.id;
+
+        console.log(this.producto.id);
+        this.http.post(`https://printopia-backend.onrender.com/api/products/update/${this.producto.id}`, this.producto, {headers}).subscribe({
+                next: response => {
+                    console.log("Respuesta del servidor:", response);
+                    const productoResponse = response as Producto;
+                    this.administrarProductosService.actualizarProducto(productoResponse)
+                },
+                error: error => {
+                    console.error("Error al enviar los datos:", error);
+                }
+            });
+        this.crearModificarService.setCrearModificar(true)
+    }
+
+    manejarClick() {
+        console.log(this.modificarCrearProducto);
+        
+        if (this.modificarCrearProducto) {
+            this.agregarProducto();
+        } else {
+            this.actualizarProducto();
+            this.crearModificarService.setCrearModificar(true)
+        }
     }
 
     cerrarModal(): void {
@@ -88,48 +148,8 @@ export class AgregarProductosComponent {
             this.producto.category.id = 3;
             break;
           default:
-            this.producto.category.id = null; // Manejo de caso por defecto
+            this.producto.category.id = 1;
+            break
         }
       }
-
 }
-
-// registrar() {
-//     console.log(this.aceptarTerminos);
-//     console.log("Contraseñas no coinciden",this.contraseniasNoCoinciden);
-//     this.alertaTerminos = false
-//     this.alertaContrasenas = false
-//     this.alertaVacio = false
-//     if (this.aceptarTerminos == false) {
-//         this.alertaTerminos = true
-//     }
-//     if (this.contraseniasNoCoinciden) {
-//         this.alertaContrasenas = true
-//     }
-//     if (this.usuario.name.trim() == "" || 
-//         this.usuario.lastName.trim() == "" ||
-//         this.usuario.email.trim() == "" ||
-//         this.usuario.password.trim() == "" ||
-//         this.confirmacionContrasenia.trim() == "") 
-//         {
-//         this.alertaVacio = true
-//     }
-    
-//     if (this.aceptarTerminos && !this.contraseniasNoCoinciden) {
-//         this.mostrarCarga = true;
-//         this.http.post('https://printopia-backend.onrender.com/api/users/register', this.usuario).subscribe({
-//             next: response => {
-//                 console.log("Respuesta del servidor:", response);
-//                 this.mostrarCarga = false;
-//                 this.mostrarLogin()
-//             },
-//             error: error => {
-//                 console.error("Error al enviar los datos:", error);
-//                 this.mostrarCarga = false;
-//             }
-            
-//         });
-//     } else {
-//         console.error("Debes aceptar los términos y condiciones y las contraseñas deben coincidir para registrarte.");
-//     }
-// }

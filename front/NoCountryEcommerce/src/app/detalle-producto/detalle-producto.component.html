@@ -1,0 +1,34 @@
+<div class="principal">
+    <div class="contenedor">
+        <div class="dImagen" style="display: flex;">
+            <img src="{{producto?.photo}}" alt="" class="imagen">
+            <img src="{{producto?.photo}}" alt="">
+        </div>
+        <div class="detalleProducto" *ngIf="producto">
+            <p class="titulo">{{producto.name}}</p>
+            <p class="categoria">
+                <ng-container *ngIf="producto.category.id === 1">Hogar</ng-container>
+                            <ng-container *ngIf="producto.category.id === 2">Protesis</ng-container>
+                            <ng-container *ngIf="producto.category.id === 3">Cosplay</ng-container>
+            </p>
+            <div class="medidas">
+                <div class="tituloMedidas">
+                    <p class="pMedidas">Medidas</p>
+                </div>
+                <p>Ancho: {{producto.width}}</p>
+                <p>Alto: {{producto.height}}</p>
+                <p>Largo: {{producto.depth}}</p>
+            </div>
+            <div class="medidas">
+                <div class="tituloMedidas">
+                    <p class="pMedidas">Descripcion</p>
+                </div>
+                <p>{{producto.description}}</p>
+            </div>
+            <button>AGREGAR</button>
+        </div>
+        <div class="precio">
+            <p>${{producto?.price}}</p>
+        </div>
+    </div>
+</div>

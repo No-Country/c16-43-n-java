@@ -1,7 +1,8 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, EventEmitter, Output } from '@angular/core';
 import { Producto } from '../interfaces/producto.interfaces';
 import { CategoriasService } from '../services/categorias.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { InicioComponent } from '../inicio/inicio.component';
 
 @Component({
   selector: 'app-productos',
@@ -19,17 +20,16 @@ export class ProductosComponent implements DoCheck {
     productosHogar: Producto[] = []
     productosProtesisDental: Producto[] = []
     productosCosplay: Producto[] = []
+    @Output() productoSeleccionado = new EventEmitter<Producto>();
 
     constructor(private categoriasService: CategoriasService,
-                private http: HttpClient) {}
+                private http: HttpClient,
+                private inicioComponent: InicioComponent) {}
 
     ngOnInit(): void {
         const usuario = 'admin@printopia.com';
         const password = 'Admin123';
-
         const credenciales = btoa(usuario + ':' + password);
-
-    // Crea el encabezado de autorización
         const headers = new HttpHeaders({
             'Authorization': 'Basic ' + credenciales
         });
@@ -48,4 +48,8 @@ export class ProductosComponent implements DoCheck {
         this.cosplay = this.categoriasService.getCosplay()
         }
 
+    verProducto(producto: Producto): void {
+        this.productoSeleccionado.emit(producto);
+        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, false, true);
+    }
 }

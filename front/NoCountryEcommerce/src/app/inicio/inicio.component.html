@@ -1,7 +1,8 @@
 <app-encabezado *ngIf="encabezado"></app-encabezado>
 <app-pagina-principal *ngIf="paginaPrincipal" ></app-pagina-principal>
-<app-productos *ngIf="productos" ></app-productos>
+<app-productos *ngIf="productos" (productoSeleccionado)="onProductoSeleccionado($event)"></app-productos>
 <app-administrador-productos *ngIf="administradorProductos"></app-administrador-productos>
 <app-login *ngIf="login" ></app-login>
 <app-registro *ngIf="registro" ></app-registro>
+<app-detalle-producto *ngIf="detalleProducto" [producto]="productoElegido"></app-detalle-producto>
 <app-pie-pagina *ngIf="piePagina"></app-pie-pagina>

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Producto } from '../interfaces/producto.interfaces';
 
 @Component({
   selector: 'app-inicio',
@@ -16,6 +17,8 @@ export class InicioComponent {
     login: boolean = false
     registro: boolean = false
     administradorProductos: boolean = false
+    detalleProducto: boolean = false
+    productoElegido: Producto | null = null;
 
     mostrarLogin(encabezado: boolean,
                  paginaPrincipal: boolean,
@@ -23,7 +26,8 @@ export class InicioComponent {
                  piePagina: boolean,
                  login: boolean,
                  registro: boolean,
-                 administradorProductos: boolean): void {
+                 administradorProductos: boolean,
+                 detalleProducto: boolean): void {
             this.paginaPrincipal = paginaPrincipal;
             this.encabezado = encabezado;
             this.piePagina = piePagina;
@@ -31,5 +35,10 @@ export class InicioComponent {
             this.registro = registro;
             this.productos = productos;
             this.administradorProductos = administradorProductos;
+            this.detalleProducto = detalleProducto;
             }
+
+    onProductoSeleccionado(producto: Producto): void {
+        this.productoElegido = producto;
+}
 }

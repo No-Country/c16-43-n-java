@@ -65,10 +65,10 @@ export class LoginComponent {
             });
     }
     mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false, false);
     }
 
     mostrarRegistro(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, false, true, false, false);
+        this.inicioComponent.mostrarLogin(false, false, false, false, false, true, false, false, false);
     }
 }

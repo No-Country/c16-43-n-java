@@ -73,10 +73,10 @@ export class RegistroComponent {
         this.contraseniasNoCoinciden = this.usuario.password !== this.confirmacionContrasenia;
     }
     mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false, false);
     }
 
     mostrarLogin(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false, false);
+        this.inicioComponent.mostrarLogin(false, false, false, false, true, false, false, false, false);
     }
 }

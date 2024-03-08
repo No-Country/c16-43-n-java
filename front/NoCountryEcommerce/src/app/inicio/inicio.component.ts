@@ -19,6 +19,7 @@ export class InicioComponent {
     administradorProductos: boolean = false
     detalleProducto: boolean = false
     productoElegido: Producto | null = null;
+    contacto: boolean = false
 
     mostrarLogin(encabezado: boolean,
                  paginaPrincipal: boolean,
@@ -27,7 +28,8 @@ export class InicioComponent {
                  login: boolean,
                  registro: boolean,
                  administradorProductos: boolean,
-                 detalleProducto: boolean): void {
+                 detalleProducto: boolean,
+                 contacto: boolean): void {
             this.paginaPrincipal = paginaPrincipal;
             this.encabezado = encabezado;
             this.piePagina = piePagina;
@@ -36,6 +38,7 @@ export class InicioComponent {
             this.productos = productos;
             this.administradorProductos = administradorProductos;
             this.detalleProducto = detalleProducto;
+            this.contacto = contacto
             }
 
     onProductoSeleccionado(producto: Producto): void {

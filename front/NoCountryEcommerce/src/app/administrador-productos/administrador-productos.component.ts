@@ -88,11 +88,11 @@ export class AdministradorProductosComponent {
 
     mostrarInicio(): void {
         this.estiloEncabezadoService.setEstiloEncabezado(false);
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false, false);
     }
 
     mostrarAdministradorProductos(): void {
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, true, false)
+        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, true, false, false)
     }
 }

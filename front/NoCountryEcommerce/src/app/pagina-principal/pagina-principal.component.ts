@@ -19,7 +19,7 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(false)
         this.categoriasService.setCosplay(false)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false, false);
     }
 
     mostrarProtesisDentales(): void{
@@ -27,7 +27,7 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(true)
         this.categoriasService.setCosplay(false)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false, false);
     }
 
     mostrarCosplay(): void{
@@ -35,7 +35,6 @@ export class PaginaPrincipalComponent {
         this.categoriasService.setProtesisDentales(false)
         this.categoriasService.setCosplay(true)
         this.estiloEncabezadoService.setEstiloEncabezado(true);
-        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false);
+        this.inicioComponent.mostrarLogin(true, false, true, true, false, false, false, false, false);
     }
-
 }

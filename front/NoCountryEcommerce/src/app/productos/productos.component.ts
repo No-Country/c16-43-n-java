@@ -50,6 +50,6 @@ export class ProductosComponent implements DoCheck {
 
     verProducto(producto: Producto): void {
         this.productoSeleccionado.emit(producto);
-        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, false, true);
+        this.inicioComponent.mostrarLogin(true, false, false, true, false, false, false, true, false);
     }
 }

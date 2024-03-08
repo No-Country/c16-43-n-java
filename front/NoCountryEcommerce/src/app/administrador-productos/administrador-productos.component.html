@@ -4,10 +4,13 @@
         <p>Ventas</p>
     </div>
     <div class="dButton">
-        <app-agregar-productos *ngIf="modalAbierto" (cerrado)="cerrarModal()">
-            
+        <app-agregar-productos [productoSeleccionado]="productoSeleccionado"
+                                *ngIf="modalAbierto"
+                                (cerrado)="cerrarModal()"
+                                >
+
         </app-agregar-productos>
-        <button class="button" (click)="abrirModal()">Agregar nuevo roducto</button>
+        <button class="button" (click)="abrirModal(); productoNuevo()">Agregar nuevo roducto</button>
     </div>
     <div class="productos">
         <div class="contenedor">
@@ -28,13 +31,17 @@
                 <tbody>
                     <tr *ngFor="let producto of productos">
                         <td>{{producto.id}}</td>
-                        <td>{{producto.category.name}}</td>
+                        <td>
+                            <ng-container *ngIf="producto.category.id === 1">Hogar</ng-container>
+                            <ng-container *ngIf="producto.category.id === 2">Protesis</ng-container>
+                            <ng-container *ngIf="producto.category.id === 3">Cosplay</ng-container>
+                        </td>
                         <td>{{producto.name}}</td>
                         <td>{{producto.description}}</td>
                         <td>
-                            <p>Ancho: {{producto.width}}</p>
-                            <p>Alto: {{producto.height}}</p>
-                            <p>Largo: {{producto.depth}}</p>
+                            <p>Ancho: {{producto.width}} cm</p>
+                            <p>Alto: {{producto.height}} cm</p>
+                            <p>Largo: {{producto.depth}} cm</p>
                         </td>
                         <td>$ {{producto.price}}</td>
                         <td>{{producto.sku}}</td>
@@ -42,10 +49,10 @@
                             <img src="{{producto.photo}}" alt="">
                         </td>
                         <td class="tdEditar">
-                            <button class="editar">Editar</button>
+                            <button class="editar" (click)="editarProducto(producto)">Editar</button>
                         </td>
                         <td class="tdBorrar">
-                            <button class="borrar">
+                            <button class="borrar" (click)="eliminarProducto(producto)">
                                 <img src="../../assets/Cruz.svg" alt="">
                             </button>
                         </td>
@@ -61,6 +68,6 @@
                 <button class="buttonAceptar" (click)="mostrarInicio()">Aceptar</button>
             </div>
         </div>
-        
+
     </div>
 </div>

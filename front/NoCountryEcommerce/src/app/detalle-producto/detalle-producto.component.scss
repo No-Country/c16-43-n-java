@@ -1,0 +1,93 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 43.75rem;
+    .contenedor {
+        display: flex;
+        height: 33.25rem;
+        .dImagen {
+            height: 33.25rem;
+            img {
+                width: 16.56rem;
+                height: 100%;
+                opacity: 80%;
+                border-radius: 0.62rem;
+            }
+            .imagen {
+                margin-right: 1.87rem;
+            }
+        }
+        .detalleProducto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0px 0px 0px 3.12rem;
+            width: 18.25rem;
+            .titulo {
+                display: flex;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: Raleway;
+                margin: 0px;
+            }
+            .categoria {
+                display: flex;
+                justify-content: center;
+                font-size: 1.25rem;
+                font-family: Raleway;
+                margin: 0.31rem 0px 0px 0px;
+            }
+        }
+        .medidas {
+            width: 18.25rem;
+            height: 10.62rem;
+            background-color: rgba(238, 239, 239, 0.6);
+            border-radius: 0.62rem;
+            .tituloMedidas {
+                width: 18.25rem;
+                height: 2.68rem;
+                background-color: rgba(238, 239, 239, 1);
+                border-radius: 0.62rem;
+                .pMedidas {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    font-size: 1.56rem;
+                    font-family: Raleway;
+                    margin: 0px 0px 0px 2.25rem;
+                }
+            }
+            p {
+                margin: 0.93rem 0px 0.93rem 0.62rem;
+                font-family: Raleway;
+                font-size: 1.25rem;
+            }
+        }
+        button {
+            border: 0px;
+            padding: 0px;
+            height: 2.68rem;
+            background-color: rgba(92, 207, 190, 1);
+            color: white;
+            font-family: Raleway;
+            font-size: 1.25rem;
+            border-radius: 0.62rem;
+        }
+        .precio {
+            width: 18.25rem;
+            p {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 2rem;
+                margin: 0px;
+                font-family: Raleway;
+                font-weight: 700;
+                color: rgba(253, 185, 0, 1);
+            }
+        }
+    }
+}

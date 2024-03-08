@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InicioSesionService {
-    inicioSesion: boolean = true;
+    inicioSesion: boolean = false;
 
     setInicioSesion(value: boolean): void {
         this.inicioSesion = value;

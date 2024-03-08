@@ -1,5 +1,5 @@
 export interface Producto {
-    id:number | null
+    id: number | null
     name: string,
     description: string,
     type:string,

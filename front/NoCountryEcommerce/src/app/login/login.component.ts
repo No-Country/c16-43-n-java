@@ -21,14 +21,6 @@ export class LoginComponent {
     constructor(private inicioComponent: InicioComponent,
                 private http: HttpClient,
                 private inicioSesionService: InicioSesionService) { }
-    
-    mostrarInicio(): void {
-        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false);
-    }
-
-    mostrarRegistro(): void {
-        this.inicioComponent.mostrarLogin(false, false, false, false, false, true, false);
-    }
 
     onSubmit() {
         this.alerta2 = false
@@ -71,5 +63,12 @@ export class LoginComponent {
                   this.mostrarCarga = false
                 }
             });
+    }
+    mostrarInicio(): void {
+        this.inicioComponent.mostrarLogin(true, true, false, true, false, false, false, false, false);
+    }
+
+    mostrarRegistro(): void {
+        this.inicioComponent.mostrarLogin(false, false, false, false, false, true, false, false, false);
     }
 }
